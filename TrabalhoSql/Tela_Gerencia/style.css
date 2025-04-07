@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    
+
+}
+body{
+    height: 99.8vh;
+    background-color: #000000;
+
+}
+.tela{
+    display: flex;
+    margin-top: 20px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 50px;
+ 
+}
+
+.barra_expandir{
+    padding-left: 26px;
+    height: 40px;
+
+}
+.barra_expandir>i{
+    font-size: 26px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+nav {
+    padding: 20px 0px 40px  1%;
+    width: 90px;
+    height: 100%;
+    /* background-color: #0f1c2f; */
+     background-color:#093B38 ; 
+    box-shadow: 4px 0 0 #E1A941;
+    position: fixed;
+    overflow: hidden;
+    transition: .5s;
+    }
+nav.expandir{
+    width: 250px;
+}
+
+ul{
+    list-style: none;
+    height: 100%;
+
+
+}
+        ul li.ativo{
+            background-color: #E1A941;
+        }
+        ul li{
+            transition: .5s;
+
+        }
+        ul li:hover{
+            background-color: #E1A941;
+
+        }
+        ul li>a{
+            margin-left: 20px;
+            color:white;
+            font-size: 20px;
+            padding: 20px 4%;
+            margin-bottom: 10px;
+            line-height: 10px;
+            display: flex;
+            text-decoration: none;
+        }
+                ul li>a>.txt_item2{
+                    padding-top: 10px;
+                    margin-left: 30px;
+                    transition: 1s;
+                    
+                }
+
+                nav.expandir  .txt_item2 {
+                    opacity: 1;
+                    margin-left:10px;
+                    
+                    
+                    
+                }
+
+
+                ul li>a>.img{
+                    font-size: 30px;
+                }
+ 
+
+                /*Centro da pagina*/
+
+
+.apresentation{
+    margin:0 80px 0 150px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+
+
+} 
+
+table{
+    background-color: #fff;
+ 
+}
+table,th,td{
+    
+    border: 1px solid rgb(9, 6, 6);
+    
+    border-collapse: collapse;
+}
+td{
+   
+    text-align: center;
+}
+th{
+    
+    flex-wrap: wrap;
+}
+h1{
+    color: #ffffff;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+hr{
+    width: 40%;
+}

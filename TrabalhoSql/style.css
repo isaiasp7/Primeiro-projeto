@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+    
+
+
+
+
+
+
+}
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-image: url("img - backgroud/350c27488c01583e4ad22f4bf2ae6895.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.Tela{
+    backdrop-filter: blur(10px);
+    display: flex;
+    height: 500px;
+    width: 850px;
+    overflow: hidden;
+    border-radius: 30px;
+    align-items: center;
+    border: 2px solid white;
+
+    
+}
+form{
+    
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    justify-content:center;
+    align-items: center;
+    width: 500px;
+
+
+}
+
+    .div2{
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+            .usuario,.senha{
+                display: flex;
+                flex-direction: column;
+                margin-left: 40px;
+                color: red;
+            }
+    .title{
+        display:flex ;
+        justify-content: center;
+        text-shadow: rgb(3, 2, 2) 5px 5px 10px;  /*sombra*/
+        font-size: 40px;
+        padding: 5px 2px 5px 0px;
+    
+    }
+        hr{ 
+            margin-bottom: 10px;
+            width: 100px;
+            border-radius: 10px;
+        }        
+    label{
+            padding-left: 5px;
+            padding-bottom: 2px;
+            text-shadow: rgb(3, 2, 2) 5px 5px 10px;  /*sombra*/
+
+
+        }
+
+    input[type="email"],input[type="password"]{
+        border: 1px solid white;
+        color: #000000;
+        font-size: 14px;
+        font-weight: 500;
+        margin-right: 50px;
+        width: 290px;
+        padding: 10px 10px;
+        height:30px;
+        border-radius: 10px;
+       
+    }
+
+    input[type="submit"]{
+        color: #000000;
+        border: 1px solid white;
+        font-size: 16px;
+        width: 150px;
+        height: 25px;
+        padding-left: 10px;
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+        input[type="submit"]:hover{
+            background-color: rgb(207, 205, 205);
+        }
+
+        .submit{
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+                #Acesso{
+                margin-top: 30px;    
+            }
+
+.Cadastro{
+    
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+        a{ 
+            cursor: pointer;
+            margin: 0 5px;
+            color: rgb(101, 168, 255);
+            font-size: 15px;    
+            transition: 0.5s;
+            text-decoration: none;
+        }
+            a:hover{
+                font-size: 20px;
+
+            }
+
+
+
+iframe{
+    width: 500px;
+    filter: drop-shadow(0 0 0 transparent);
+    height: 650px;
+    
+
+}

@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+
+
+
+}
+body{
+    height: 100vh;
+background-color: black;
+
+
+}
+.tela{
+    
+    display: grid;
+    place-items: center;
+    margin-top: 20px;
+    height: 41%;
+
+    
+ 
+}
+
+
+                /*Centro da pagina*/
+
+
+form{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width: 700px;
+    height: 100%;
+
+    border-radius: 8px;
+    background-color: #2B6162;
+  
+
+}
+        .container{
+            display: flex;
+            justify-content: center;
+            height: 150px;
+ 
+
+        }
+    .div1{
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+
+
+        .div1 > .Nome{
+            display: flex;
+            flex-direction: column;
+    
+            
+
+        }
+    .div2{
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .title{
+        display:flex ;
+        justify-content: center;
+        margin-right: 30px;
+        color: white;
+        text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em; /*sombra*/
+        font-size: 40px;
+        padding: 5px 2px 5px 0px;
+    
+    }        
+    label{
+            padding-left: 5px;
+            color: #fff;
+            text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em; /*sombra*/
+        }
+
+    input[type="tel"],input[type="text"],input[type="date"],input[type="text"]{
+        font-size: 14px;
+        font-weight: 500;
+        margin-right: 50px;
+        width: 290px;
+        padding: 10px 10px;
+        height:30px;
+        border-radius: 10px;
+       
+    }
+    input[type="date"]{
+        text-align: center;
+
+    }
+
+    input[type="submit"]{
+        
+        width: 150px;
+        height: 25px;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+
+
+.img_1{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 60px;
+
+
+}
+.img_2{
+    width: 500px;
+    display: flex;
+    justify-content: flex-end ;
+}
+
+#p1{
+    align-self: flex-end;
+    margin-top: -80px;
+    width: 320px;
+    height: 240px;
+ 
+    
+}
+
+@keyframes p2 {
+	0%{
+		transform:translateY(-10px);
+        transform:translateX(-10px);
+	}
+	50%{
+		transform:translateY(5px);
+        transform:translateX(5px)
+	}
+    100%{
+		transform:translateY(10px);
+        transform:translateX(10px);
+	}
+}
+
+
+#p2{
+    margin-bottom: -60px;/*É justo, mas não é certo*/
+    width: 320px;
+    height: 240px;
+    will-change: transform;/*Usado para notificar ao navegador que haverá uma animação no site*/
+    animation: p2 3s infinite alternate ease-out;
+
+}
+
+
+            
+

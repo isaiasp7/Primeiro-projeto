@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   
+}
+
+body
+{   
+ height: 99.6vh;
+ background-color: #000000;
+ display: grid;
+ place-items: center;
+ background-size: 100% 100%;
+ 
+
+  
+}
+
+.container{
+     border-radius: 10px;
+    background-color: #2B6162;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img{
+
+    border-radius: 10px;
+    height: 500px;
+
+}
+iframe{
+    border: 2px solid blanchedalmond;/*Esconder laterias do iframe*/
+    border-radius: 10px;
+    margin-bottom: 50px;
+    height: 500px;
+    background-color: blanchedalmond;
+}
+form{
+    
+    color: aliceblue;
+    font-size: 20px;
+   
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.input{
+    margin:0 10px;
+    display: flex;
+    gap: 20px;
+}
+input{
+    width: 40%;
+    border-radius: 50px;
+    height: 25px;
+    display: flex;
+    align-self: center;
+    text-align: center;
+}
