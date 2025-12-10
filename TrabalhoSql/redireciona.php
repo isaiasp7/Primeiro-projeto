@@ -91,18 +91,18 @@ require_once("SingletonBd/Conexao.php");
                      break;
                     case 'gerencia':
                         
-                        //session_start();
-                        //$_SESSION['ProfessorLogado'] = false;
-                        //if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-                        //    // Lógica de validação do login
+                        session_start();
+                        $_SESSION['ProfessorLogado'] = false;
+                        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                            // Lógica de validação do login
                  //
-                        //        $_SESSION['ProfessorLogado'] = true;
-                        //         header('Location: tela01.php');
-                        // }
-                        // else {
-                        //         echo "Você não tem acesso a essa tela.";
-                      //
-                        // }
+                                $_SESSION['ProfessorLogado'] = true;
+                                 header('Location: tela01.php');
+                         }
+                         else {
+                                echo "Você não tem acesso a essa tela.";
+                      
+                         }
                      header("Location:Tela_Gerencia/Gerencia.php");
                      break;
                  default:
