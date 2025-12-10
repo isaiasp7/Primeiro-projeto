@@ -19,10 +19,11 @@
       <table>
       <tr>
                 <th>ID Aluno</th>
-                <th>Email</th>
-                <th>Telefone</th>
+                  <th>Nome</th>
+                 <th>Email</th>
+                 <th>Telefone</th>
                 <th>Cursando</th>
-                <th>Nome</th>
+              
                 <th>Data Nascimento</th>
                 <th>Quantidade de Faltas</th>
             </tr> 
@@ -33,11 +34,21 @@
                 <form action="logica_adc.php" id="form" method="post">
                         <td>Gerado Automaticamente</td>
                         <td >Digite enter para cadastrar</td>
-                        <td><input type="number" id="input" name="Numero" placeholder="Número"></td>
-                        <td><input type="text" id="input" name="Cursando" placeholder="Curso" required></td>
-                        <td><input type="text" id="input" name="Nome" placeholder="Nome" required></td>
-                        <td><input type="date" id="input" name="data" placeholder="Data Nascimento" required></td>
-                        <td><input type="number" id="input" name="QFaltas" placeholder="Faltas"></td>
+                        <td>
+                            <input type="text" id="input" name="Email" placeholder="Email">
+                        </td>
+                        <td>
+                            <input type="number" id="input" name="Telefone" placeholder="Telefone" required>
+                        </td>
+                        <td>
+                            <input type="text" id="input" name="Curso" placeholder="Curso" required>
+                        </td>
+                        <td>
+                            <input type="date" id="input" name="data" placeholder="Data Nascimento" required>
+                        </td>
+                        <td>
+                            <input type="number" id="input" name="QFaltas" placeholder="Faltas">
+                        </td>
                         
                         
                         
@@ -54,10 +65,11 @@
       <table>
           <tr>
              
-          <th>Professores_id</th>
+                    <th>Professores_id</th>
+                    <th>Nome</th>
                     <th>Email</th>
                     <th>Telefone</th>
-                <th>Nome</th>
+                
                 <th>especializacao</th>
           
           </tr> 
@@ -153,8 +165,8 @@
           <tr>
             
                 <form action="logica_adc.php" id="form" method="post">
-                        <td><input type="number" id="input" name="Aid" placeholder="Id"></td>
-                        <td><input type="text" id="input" name="Did" placeholder="Nome"></td>
+                        <td><input type="number" id="input" name="Aid" placeholder="ID"></td>
+                        <td><input type="text" id="input" name="Did" placeholder="ID"></td>
                         <td>Gerado Automaticamente</td>
                         <td><input type="number"  step="0.1" id="input" name="N1" placeholder="Nota1"></td>
                         <td><input type="number"  step="0.1" id="input" name="N2" placeholder="Nota2"></td>

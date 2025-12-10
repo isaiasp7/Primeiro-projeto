@@ -12,7 +12,7 @@
     <?php
     //verificar se id existe em categoria
     $pdo = new PDO(
-        "mysql:host=localhost;port=3306;dbname=trabalhosql;",
+        "mysql:host=localhost;port=3306;dbname=admescola;",
         'root',
         'root12345'
     );
@@ -50,7 +50,7 @@
     echo ("campo : ".$campoId);
     echo ("campo aluno : ".$listaPost[$campoId]);
     foreach ($listaPost as $key => $value) {
-        if (!empty($value) && $key != $campoId) {
+        if (!empty($value) && $key != $campoId && $key != 'entidade') {
             $sql = $pdo->prepare("UPDATE {$listaPost['entidade']} SET $key=? WHERE $campoId=?");
             $sql->execute([$value, $listaPost[$campoId]]);
         }
@@ -59,9 +59,10 @@
     //session_start();
     //$_SESSION['ProfessorLogado'] = true;
     echo ("<script>
-alert('Atualização feita com suceeso!');
-    
-    </script>"); //window.location.href = '../Gerencia.php'
+            alert('Atualização feita com suceeso!');
+            window.location.href = '../Gerencia.php';
+                
+    </script>"); 
 
 
 

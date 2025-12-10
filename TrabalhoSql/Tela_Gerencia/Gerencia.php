@@ -83,10 +83,10 @@
         <table>
             <tr>
                 <th>ID Aluno</th>
-                <th>Email</th>
-                <th>Numero</th>
-                <th>Cursando</th>
                 <th>Nome</th>
+                <th>Email</th>
+                <th>Telefone</th>
+                <th>Cursando</th>
                 <th>Data Nascimento</th>
                 <th>Quantidade de Faltas</th>
             </tr> 
@@ -101,10 +101,10 @@
         <table>
             <tr>
                 <th>Professores_id</th>
+                    <th>Nome</th>
                     <th>Email</th>
-                    <th>Numero</th>
-                <th>Nome</th>
-                <th>especializacao</th>
+                <th>Telefone</th>
+                <th>Especializacao</th>
                 
                 
             </tr> 
@@ -140,7 +140,7 @@
         
         <table>
             <tr>
-                <th>Disciplina_id
+                <th>Disciplina_id</th>
                 <th>Nome</th>
                 <th>Descrição</th>
 
