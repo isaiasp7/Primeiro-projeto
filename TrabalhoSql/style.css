@@ -144,3 +144,13 @@ iframe{
     
 
 }
+.error-box {
+        display: none;
+        background-color: #ffdddd;
+        color: #900;
+        padding: 10px;
+        border: 1px solid #900;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        font-family: Arial, sans-serif;
+    }

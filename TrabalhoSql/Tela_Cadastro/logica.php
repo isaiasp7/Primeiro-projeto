@@ -1,6 +1,5 @@
-
-    <?php 
-    require_once("../SingletonBd/Conexao.php");   
+<?php 
+    require_once("ConexaoSingleton/Conexao.php"); 
             //retorna os id
             
     function RetornaId(){
@@ -46,7 +45,7 @@
         $num = $_POST["telefone"];
         $curso = $_POST["curso"];
         $pdo = new PDO(
-            "mysql:host=localhost;port=3306;dbname=trabalhosql;",
+            "mysql:host=localhost;port=3306;dbname=admescola;",
             'root',
             'root12345'
         );
@@ -67,5 +66,3 @@
         header("Location:../Tela_Aluno/Aluno.php");
         
 ?>
-
-    

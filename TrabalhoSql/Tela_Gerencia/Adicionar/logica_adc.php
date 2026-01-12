@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <?php 
-    require_once(__DIR__ . "/../../SingletonBd/Conexao.php");    
+    require_once("ConexaoSingleton/Conexao.php");  
     //==========================================================
         
     function RetornaId(){
@@ -127,7 +129,7 @@
 // Conectar ao banco de dados
 //root:JMjVSycDSfmpMtAUOLHKkUEzYWgusJTh@junction.proxy.rlwy.net:34807/railway
 $pdo = new PDO(
-    "mysql:host=localhost;port=3306;dbname=trabalhosql;",
+    "mysql:host=localhost;port=3306;dbname=admescola;",
     'root',
     'root12345'
 );
@@ -148,7 +150,7 @@ if (isset($_POST["Nome"]) && isset($_POST["data"]) && isset($_POST["Cursando"]))
         }
     $nome = $_POST["Nome"];
     $data = $_POST["data"];
-    $qFaltas = $_POST["QFaltas"] ? $_POST["QFaltas"] : 0;
+    $qFaltas = isset($_POST["QFaltas"]) ? $_POST["QFaltas"] : 0;
     $num = $_POST["Numero"] ? $_POST["Numero"] : 0;
     $cursando = $_POST["Cursando"];
 
@@ -292,4 +294,5 @@ elseif (!empty($_POST["Aid"]) && !empty($_POST["Did"]) && !empty($_POST["N1"]) &
         
     ?>
 </body>
+
 </html>

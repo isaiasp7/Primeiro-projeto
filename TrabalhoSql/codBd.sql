@@ -11,6 +11,7 @@ CREATE TABLE Alunos (
     Cursando VARCHAR(20) NOT NULL,
     data_nascimento DATE NOT NULL,
     Quant_Faltas TINYINT,
+    Senha VARCHAR(10) not null
     PRIMARY KEY (Aluno_id)
 );
 
@@ -23,6 +24,7 @@ CREATE TABLE Professores (
     Email VARCHAR(80) GENERATED ALWAYS AS (CONCAT(Nome, '@professor.com')) STORED,
     Numero BIGINT NOT NULL,
     especializacao VARCHAR(30),
+     Senha VARCHAR(10) not null
     PRIMARY KEY (Professores_id)
 );
 

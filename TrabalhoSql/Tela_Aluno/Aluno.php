@@ -10,7 +10,7 @@
 <body>
     
     <div class="container">
-                <img src="../imgs/306fd0fb64f67ff40f81d8e37f8bf674-removebg-preview.png" alt="">
+                <img src="../img - backgroud/306fd0fb64f67ff40f81d8e37f8bf674-removebg-preview.png" alt="">
                 
                 <table class="s">
                         <h1 class="title">Dados Do Aluno<hr></h1> 
@@ -25,6 +25,7 @@
                         <th>Email</th>
                     </tr> 
                             <?php 
+                            session_start();
                             $file="Dado_Aluno.json";
                             $dado_aluno=(array)json_decode(file_get_contents($file));
                             foreach ($dado_aluno as $key) {         
